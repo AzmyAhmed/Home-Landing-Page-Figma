@@ -47,6 +47,7 @@ body {
   position: absolute;
   top: 30%;
   left: 8px;
+  align-self: flex-start;
 }
 
 /*Header*/
@@ -437,11 +438,16 @@ footer form button {
 nav.mobile-nav {
   display: none;
 }
+.mobile-container {
+  display: none;
+}
+
 /* tablet version */
 @media (max-width: 1100px) {
   .btn {
     padding: 12px 32px;
   }
+
   .wrapper {
     padding: 0 100px;
   }
@@ -564,5 +570,52 @@ nav.mobile-nav {
   .mobile-container ul li a {
     color: #fff;
     font-size: 36px;
+  }
+}
+@media (max-width: 700px) {
+  .wrapper {
+    padding: 0 32px;
+  }
+  .hero-section .left p {
+    width: 100%;
+  }
+  .hero-section .left {
+    width: 100%;
+  }
+  .hero-section .right {
+    top: 636px;
+    left: 171px;
+  }
+  .app-section .app-buttons {
+    flex-direction: column;
+  }
+  .hero-section .right img {
+    height: 300px;
+  }
+  .btn {
+    width: 180px;
+  }
+  .achievment-card .content {
+    padding: 0;
+  }
+  .achievment-card .bg {
+    width: 98%;
+    height: 97%;
+    top: 6px;
+    left: 6px;
+  }
+  .hero-section .achievment-cards {
+    transform: translateX(-30%);
+  }
+  .course-card img {
+    width: 349px;
+    height: 240px;
+  }
+
+  .courses {
+    font-size: 35px;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
   }
 }
